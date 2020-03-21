@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="passwordOptions">
+          <div class="passwordLength">
+            <label>Choose a Password Lengh</label>
+            <select id="lengthDropdown">
+
+            </select>
+          </div>
+          <div class="passwordCharOptions">
+            <input type="checkbox" name="wantsLowercase" id="wantsLowercase"><label>Include Lowercase Letters</label><br/><br/>
+            <input type="checkbox" name="wantsUppercase" id="wantsUppercase"><label>Include Uppercase Letters</label><br/><br/>
+            <input type="checkbox" name="wantsSymbols" id="wantsSymbols"><label>Include Smybols</label><br/><br/>
+            <input type="checkbox" name="wantsNumbers" id="wantsNumbers"><label>Include Numbers</label>
+          </div>
+        </div>
+        <p class="charError">Please Select A Character Type</p>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
