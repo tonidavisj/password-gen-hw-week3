@@ -1,4 +1,10 @@
-# 03 JavaScript: Password Generator
+# Toni's Week 3 HW
+
+To complete this HW assignment I updated the HTML and CSS to include a place to get the user's input for password length and character types. 
+
+Once the generate btn is clicked, the JavaScript will generate a password based on the user's requirements
+
+## 03 JavaScript: Password Generator
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
